@@ -51,7 +51,13 @@
                             <outlet property="delegate" destination="uwR-u1-N1m" id="SIw-wi-6ve"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="FoodList" id="WKf-df-CJX"/>
+                    <navigationItem key="navigationItem" title="FoodList" id="WKf-df-CJX">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="dNP-fb-2I5">
+                            <connections>
+                                <segue destination="Tzb-jN-5hc" kind="show" id="sgi-wU-QBW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wIH-iP-BSm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -130,4 +136,7 @@
             <point key="canvasLocation" x="988" y="40.929535232383813"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8u9-OP-B1n"/>
+    </inferredMetricsTieBreakers>
 </document>

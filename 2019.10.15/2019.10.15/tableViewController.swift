@@ -102,6 +102,7 @@ class TableViewController: UITableViewController {
         if let selectedCell = sender as? UITableViewCell {
             let indexPath = tableView.indexPath(for: selectedCell)!
             let selectedFood = foodList[(indexPath as NSIndexPath).row]
+            // detailVC 为detail页面的view controller foodForEdit为数据
             detailVC.foodForEdit = selectedFood
         }
     }

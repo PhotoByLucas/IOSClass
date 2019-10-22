@@ -48,7 +48,11 @@ class foodViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         if segue.identifier == "saveToList" {
+            if( foodForEdit == nil ){
+                foodForEdit = food(name: "", description: "")
+            }
             foodForEdit?.name=input1.text
+            
         }
     }
     
