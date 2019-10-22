@@ -18,6 +18,7 @@ class foodViewController: UIViewController {
 
         // 将传过来的属性值传给文本框
         input1.text = foodForEdit?.name
+        input2.text = foodForEdit?.foodDescription
         // Do any additional setup after loading the view.
     }
     
@@ -48,11 +49,12 @@ class foodViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         if segue.identifier == "saveToList" {
+            // 新增的时候 需要初始化foodForEdit对象 否则该对象会为空
             if( foodForEdit == nil ){
                 foodForEdit = food(name: "", description: "")
             }
             foodForEdit?.name=input1.text
-            
+            foodForEdit?.foodDescription=input2.text
         }
     }
     

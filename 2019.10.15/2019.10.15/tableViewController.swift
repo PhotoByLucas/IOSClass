@@ -17,9 +17,27 @@ class TableViewController: UITableViewController {
         foodList.append(food(name:"hello1",description:"world1"))
         foodList.append(food(name:"hello2",description:"world2"))
         foodList.append(food(name: "a", description: "b"))
-
     }
 
+    // 保存数据
+    func saveFoodFile() {
+        let success = NSKeyedArchiver.archiveRootObject(foodList, toFile: food.ArchiveURL.path)
+        if !success {
+            print("save fail")
+        }
+        print("save success")
+    }
+    
+    // 加载数据
+//    func loadFoodFile() -> [food]? {
+//        return (NSKeyedUnarchiver.unarchivedObject(withFile: food.ArchiveURL.path) as? [food])
+//    }
+
+    func loadFoodFile() -> [food]? {
+        return(NSKeyedUnarchiver.unarchiveObject(withFile: food.ArchiveURL.path) as? [food])
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,8 +46,16 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        if let defaultFoodList = loadFoodFile() {
+            foodList=defaultFoodList
+            
+            // 当数组为空数组时，初始化数组
+            if(defaultFoodList==[]){
+                initFoodList()
+            }
+        }
         
-        initFoodList()
+        
     }
 
     // MARK: - Table view data source
@@ -50,7 +76,7 @@ class TableViewController: UITableViewController {
 
         // Configure the cell...
         cell.textLabel?.text=foodList[indexPath.row].name
-        
+        cell.detailTextLabel?.text=foodList[indexPath.row].foodDescription
         return cell
     }
     
@@ -63,17 +89,19 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
+            foodList.remove(at: indexPath.row)
+            saveFoodFile()
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
@@ -123,6 +151,8 @@ class TableViewController: UITableViewController {
                 }
             }
         }
+        
+        saveFoodFile()
     }
     
     // 回到列表列表的函数
