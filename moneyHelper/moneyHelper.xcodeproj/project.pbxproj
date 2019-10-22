@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18A314C4234C6F4E001FBC44 /* registerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A314C3234C6F4E001FBC44 /* registerViewController.swift */; };
-		18A8B8D22327929000958620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8B8D12327929000958620 /* AppDelegate.swift */; };
-		18A8B8D42327929000958620 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8B8D32327929000958620 /* ViewController.swift */; };
-		18A8B8D72327929000958620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A8B8D52327929000958620 /* Main.storyboard */; };
-		18A8B8D92327929200958620 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A8B8D82327929200958620 /* Assets.xcassets */; };
-		18A8B8DC2327929200958620 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A8B8DA2327929200958620 /* LaunchScreen.storyboard */; };
+		1868F5BE235EE465000C8C2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868F5BD235EE465000C8C2F /* AppDelegate.swift */; };
+		1868F5C0235EE465000C8C2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1868F5BF235EE465000C8C2F /* ViewController.swift */; };
+		1868F5C3235EE465000C8C2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1868F5C1235EE465000C8C2F /* Main.storyboard */; };
+		1868F5C5235EE470000C8C2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1868F5C4235EE470000C8C2F /* Assets.xcassets */; };
+		1868F5C8235EE470000C8C2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1868F5C6235EE470000C8C2F /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		18A314C3234C6F4E001FBC44 /* registerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerViewController.swift; sourceTree = "<group>"; };
-		18A8B8CE2327929000958620 /* Helloworld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Helloworld.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		18A8B8D12327929000958620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18A8B8D32327929000958620 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18A8B8D62327929000958620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18A8B8D82327929200958620 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		18A8B8DB2327929200958620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		18A8B8DD2327929200958620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1868F5BA235EE465000C8C2F /* moneyHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moneyHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1868F5BD235EE465000C8C2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1868F5BF235EE465000C8C2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1868F5C2235EE465000C8C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1868F5C4235EE470000C8C2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1868F5C7235EE470000C8C2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1868F5C9235EE470000C8C2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		18A8B8CB2327929000958620 /* Frameworks */ = {
+		1868F5B7235EE465000C8C2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,72 +35,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18A8B8C52327929000958620 = {
+		1868F5B1235EE465000C8C2F = {
 			isa = PBXGroup;
 			children = (
-				18A8B8D02327929000958620 /* Helloworld */,
-				18A8B8CF2327929000958620 /* Products */,
+				1868F5BC235EE465000C8C2F /* moneyHelper */,
+				1868F5BB235EE465000C8C2F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		18A8B8CF2327929000958620 /* Products */ = {
+		1868F5BB235EE465000C8C2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				18A8B8CE2327929000958620 /* Helloworld.app */,
+				1868F5BA235EE465000C8C2F /* moneyHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		18A8B8D02327929000958620 /* Helloworld */ = {
+		1868F5BC235EE465000C8C2F /* moneyHelper */ = {
 			isa = PBXGroup;
 			children = (
-				18A8B8D12327929000958620 /* AppDelegate.swift */,
-				18A8B8D32327929000958620 /* ViewController.swift */,
-				18A8B8D82327929200958620 /* Assets.xcassets */,
-				18A8B8DA2327929200958620 /* LaunchScreen.storyboard */,
-				18A8B8DD2327929200958620 /* Info.plist */,
-				18A8B8D52327929000958620 /* Main.storyboard */,
-				18A314C3234C6F4E001FBC44 /* registerViewController.swift */,
+				1868F5BD235EE465000C8C2F /* AppDelegate.swift */,
+				1868F5BF235EE465000C8C2F /* ViewController.swift */,
+				1868F5C1235EE465000C8C2F /* Main.storyboard */,
+				1868F5C4235EE470000C8C2F /* Assets.xcassets */,
+				1868F5C6235EE470000C8C2F /* LaunchScreen.storyboard */,
+				1868F5C9235EE470000C8C2F /* Info.plist */,
 			);
-			path = Helloworld;
+			path = moneyHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		18A8B8CD2327929000958620 /* Helloworld */ = {
+		1868F5B9235EE465000C8C2F /* moneyHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 18A8B8E02327929200958620 /* Build configuration list for PBXNativeTarget "Helloworld" */;
+			buildConfigurationList = 1868F5CC235EE470000C8C2F /* Build configuration list for PBXNativeTarget "moneyHelper" */;
 			buildPhases = (
-				18A8B8CA2327929000958620 /* Sources */,
-				18A8B8CB2327929000958620 /* Frameworks */,
-				18A8B8CC2327929000958620 /* Resources */,
+				1868F5B6235EE465000C8C2F /* Sources */,
+				1868F5B7235EE465000C8C2F /* Frameworks */,
+				1868F5B8235EE465000C8C2F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Helloworld;
-			productName = Helloworld;
-			productReference = 18A8B8CE2327929000958620 /* Helloworld.app */;
+			name = moneyHelper;
+			productName = moneyHelper;
+			productReference = 1868F5BA235EE465000C8C2F /* moneyHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		18A8B8C62327929000958620 /* Project object */ = {
+		1868F5B2235EE465000C8C2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1030;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = Apple;
 				TargetAttributes = {
-					18A8B8CD2327929000958620 = {
+					1868F5B9235EE465000C8C2F = {
 						CreatedOnToolsVersion = 10.3;
 					};
 				};
 			};
-			buildConfigurationList = 18A8B8C92327929000958620 /* Build configuration list for PBXProject "Helloworld" */;
+			buildConfigurationList = 1868F5B5235EE465000C8C2F /* Build configuration list for PBXProject "moneyHelper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,55 +107,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 18A8B8C52327929000958620;
-			productRefGroup = 18A8B8CF2327929000958620 /* Products */;
+			mainGroup = 1868F5B1235EE465000C8C2F;
+			productRefGroup = 1868F5BB235EE465000C8C2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				18A8B8CD2327929000958620 /* Helloworld */,
+				1868F5B9235EE465000C8C2F /* moneyHelper */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		18A8B8CC2327929000958620 /* Resources */ = {
+		1868F5B8235EE465000C8C2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A8B8DC2327929200958620 /* LaunchScreen.storyboard in Resources */,
-				18A8B8D92327929200958620 /* Assets.xcassets in Resources */,
-				18A8B8D72327929000958620 /* Main.storyboard in Resources */,
+				1868F5C8235EE470000C8C2F /* LaunchScreen.storyboard in Resources */,
+				1868F5C5235EE470000C8C2F /* Assets.xcassets in Resources */,
+				1868F5C3235EE465000C8C2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		18A8B8CA2327929000958620 /* Sources */ = {
+		1868F5B6235EE465000C8C2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18A314C4234C6F4E001FBC44 /* registerViewController.swift in Sources */,
-				18A8B8D42327929000958620 /* ViewController.swift in Sources */,
-				18A8B8D22327929000958620 /* AppDelegate.swift in Sources */,
+				1868F5C0235EE465000C8C2F /* ViewController.swift in Sources */,
+				1868F5BE235EE465000C8C2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		18A8B8D52327929000958620 /* Main.storyboard */ = {
+		1868F5C1235EE465000C8C2F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18A8B8D62327929000958620 /* Base */,
+				1868F5C2235EE465000C8C2F /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		18A8B8DA2327929200958620 /* LaunchScreen.storyboard */ = {
+		1868F5C6235EE470000C8C2F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				18A8B8DB2327929200958620 /* Base */,
+				1868F5C7235EE470000C8C2F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +162,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		18A8B8DE2327929200958620 /* Debug */ = {
+		1868F5CA235EE470000C8C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -227,7 +223,7 @@
 			};
 			name = Debug;
 		};
-		18A8B8DF2327929200958620 /* Release */ = {
+		1868F5CB235EE470000C8C2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -282,36 +278,36 @@
 			};
 			name = Release;
 		};
-		18A8B8E12327929200958620 /* Debug */ = {
+		1868F5CD235EE470000C8C2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6N34F2DUX;
-				INFOPLIST_FILE = Helloworld/Info.plist;
+				INFOPLIST_FILE = moneyHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LiuHuaHua.scut.Helloworld;
+				PRODUCT_BUNDLE_IDENTIFIER = LiuHuaHua.scut.moneyHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		18A8B8E22327929200958620 /* Release */ = {
+		1868F5CE235EE470000C8C2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A6N34F2DUX;
-				INFOPLIST_FILE = Helloworld/Info.plist;
+				INFOPLIST_FILE = moneyHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = LiuHuaHua.scut.Helloworld;
+				PRODUCT_BUNDLE_IDENTIFIER = LiuHuaHua.scut.moneyHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,25 +317,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		18A8B8C92327929000958620 /* Build configuration list for PBXProject "Helloworld" */ = {
+		1868F5B5235EE465000C8C2F /* Build configuration list for PBXProject "moneyHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18A8B8DE2327929200958620 /* Debug */,
-				18A8B8DF2327929200958620 /* Release */,
+				1868F5CA235EE470000C8C2F /* Debug */,
+				1868F5CB235EE470000C8C2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		18A8B8E02327929200958620 /* Build configuration list for PBXNativeTarget "Helloworld" */ = {
+		1868F5CC235EE470000C8C2F /* Build configuration list for PBXNativeTarget "moneyHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18A8B8E12327929200958620 /* Debug */,
-				18A8B8E22327929200958620 /* Release */,
+				1868F5CD235EE470000C8C2F /* Debug */,
+				1868F5CE235EE470000C8C2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 18A8B8C62327929000958620 /* Project object */;
+	rootObject = 1868F5B2235EE465000C8C2F /* Project object */;
 }
