@@ -14,9 +14,9 @@ class TableViewController: UITableViewController {
     
     // 初始化数组函数
     func initFoodList() {
-        foodList.append(food(name:"hello1",description:"world1"))
-        foodList.append(food(name:"hello2",description:"world2"))
-        foodList.append(food(name: "a", description: "b"))
+        foodList.append(food(name:"hello1",description:"world1",foodCategory: "",foodAvatar: nil))
+        foodList.append(food(name:"hello2",description:"world2",foodCategory: "",foodAvatar: nil))
+        foodList.append(food(name: "a", description: "b",foodCategory: "",foodAvatar: nil))
     }
 
     // 保存数据
@@ -39,6 +39,8 @@ class TableViewController: UITableViewController {
     
     
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
@@ -55,6 +57,7 @@ class TableViewController: UITableViewController {
             }
         }
         
+        self.tableView.rowHeight=100
         
     }
 
@@ -72,11 +75,14 @@ class TableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "foodList", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "foodList", for: indexPath) as! TableViewCellController
 
+        // 高度
         // Configure the cell...
-        cell.textLabel?.text=foodList[indexPath.row].name
-        cell.detailTextLabel?.text=foodList[indexPath.row].foodDescription
+        
+        cell.imageViewOL?.image=foodList[indexPath.row].foodAvatar
+        cell.labelOneOL?.text=foodList[indexPath.row].name
+        cell.labelTwoOL?.text=foodList[indexPath.row].foodDescription
         return cell
     }
     

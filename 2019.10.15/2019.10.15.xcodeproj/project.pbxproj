@@ -17,6 +17,7 @@
 		A01FEC802355A0B200313537 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FEC7F2355A0B200313537 /* TableViewController.swift */; };
 		A01FEC822355A39400313537 /* food.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FEC812355A39400313537 /* food.swift */; };
 		A01FEC842355A94A00313537 /* foodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01FEC832355A94A00313537 /* foodViewController.swift */; };
+		A028D254236812B700402F0A /* TableViewCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028D253236812B700402F0A /* TableViewCellController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A01FEC7F2355A0B200313537 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		A01FEC812355A39400313537 /* food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = food.swift; sourceTree = "<group>"; };
 		A01FEC832355A94A00313537 /* foodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodViewController.swift; sourceTree = "<group>"; };
+		A028D253236812B700402F0A /* TableViewCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				A01FEC7F2355A0B200313537 /* TableViewController.swift */,
 				A01FEC812355A39400313537 /* food.swift */,
 				A01FEC832355A94A00313537 /* foodViewController.swift */,
+				A028D253236812B700402F0A /* TableViewCellController.swift */,
 			);
 			path = 2019.10.15;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A01FEC5223559CF000313537 /* ViewController.swift in Sources */,
+				A028D254236812B700402F0A /* TableViewCellController.swift in Sources */,
 				A01FEC822355A39400313537 /* food.swift in Sources */,
 				A01FEC802355A0B200313537 /* TableViewController.swift in Sources */,
 				A01FEC5023559CF000313537 /* AppDelegate.swift in Sources */,

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 // 添加可串行化功能 从NS两个对象中继承k使得可以序列化
 class food :NSObject,NSCoding {
     func encode(with aCoder: NSCoder) {
@@ -28,15 +28,19 @@ class food :NSObject,NSCoding {
     var name: String?
     var foodDescription: String?
     var foodCategory: String?
+    var foodAvatar: UIImage?
+    
     
     // 获取当前app目录
     static let DocumentDireactory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     static let ArchiveURL = DocumentDireactory.appendingPathComponent("foodList")
     
     // 初始化函数
-    init(name:String?,description:String?){
+    init(name:String?,description:String?,foodCategory: String?,foodAvatar: UIImage?){
         self.name=name
         self.foodDescription=description
+        self.foodCategory=foodCategory
+        self.foodAvatar=foodAvatar
     }
     
     
