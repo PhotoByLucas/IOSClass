@@ -27,11 +27,16 @@ class ViewController: UIViewController {
             hintLabel.text="login failed"
         }
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func exitToHere(segue: UIStoryboardSegue)
+    {
+        print("to")
+    }
 }
 
