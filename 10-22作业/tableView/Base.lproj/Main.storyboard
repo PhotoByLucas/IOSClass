@@ -45,14 +45,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VEW-6C-XiC" userLabel="foodImage">
-                                <rect key="frame" x="71" y="560" width="240" height="216"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="XoG-b7-yKs" appends="YES" id="aR9-qk-PpX"/>
-                                </connections>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -73,33 +65,20 @@
                                 <segue destination="vzu-kJ-uNj" kind="unwind" identifier="cancelToList" unwindAction="cancelToListWithSegue:" id="lAT-nH-AXQ"/>
                             </connections>
                         </barButtonItem>
-                        <rightBarButtonItems>
-                            <barButtonItem title="save" id="rmw-2p-exR">
-                                <connections>
-                                    <segue destination="vzu-kJ-uNj" kind="unwind" identifier="saveToList" unwindAction="saveToListWithSegue:" id="54k-6r-itv"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="camera" id="WBD-2S-9bK">
-                                <connections>
-                                    <action selector="takePhoto:" destination="hV5-Ta-kQp" id="uYA-iv-i1I"/>
-                                </connections>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" title="save" id="rmw-2p-exR">
+                            <connections>
+                                <segue destination="vzu-kJ-uNj" kind="unwind" identifier="saveToList" unwindAction="saveToListWithSegue:" id="54k-6r-itv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="descriptText" destination="4b5-JF-W7E" id="Cqj-Q8-Tc3"/>
-                        <outlet property="foodImage" destination="VEW-6C-XiC" id="6CE-op-T5p"/>
                         <outlet property="nameText" destination="UNF-Ug-ul9" id="wN6-Y1-FSj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gEu-7D-yO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="vzu-kJ-uNj" userLabel="Exit" sceneMemberID="exit"/>
-                <tapGestureRecognizer id="XoG-b7-yKs">
-                    <connections>
-                        <action selector="tapPhoto:" destination="hV5-Ta-kQp" id="6id-7e-iqV"/>
-                    </connections>
-                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="5084.057971014493" y="144.64285714285714"/>
         </scene>
@@ -112,37 +91,30 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodcell" rowHeight="118" id="kbD-3G-Rb6" customClass="foodTableViewCell" customModule="tableView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="118"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="foodcell" textLabel="ndk-aK-Oz7" detailTextLabel="q8f-X4-Mem" style="IBUITableViewCellStyleSubtitle" id="kbD-3G-Rb6">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kbD-3G-Rb6" id="nrd-zr-Q1k">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="117.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GC4-KD-JjE" userLabel="foodImage">
-                                            <rect key="frame" x="20" y="0.0" width="142" height="128"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKx-Xe-ZKg" userLabel="nameText">
-                                            <rect key="frame" x="170" y="11" width="93" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ndk-aK-Oz7">
+                                            <rect key="frame" x="20" y="5" width="33.5" height="20.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOP-cX-tx7" userLabel="descriptText">
-                                            <rect key="frame" x="170" y="66" width="93" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q8f-X4-Mem">
+                                            <rect key="frame" x="20" y="25.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="descriptText" destination="aOP-cX-tx7" id="EqL-cp-hvu"/>
-                                    <outlet property="foodImage" destination="GC4-KD-JjE" id="DvU-Vx-pF8"/>
-                                    <outlet property="nameText" destination="GKx-Xe-ZKg" id="iUl-0P-331"/>
                                     <segue destination="hV5-Ta-kQp" kind="show" id="DsC-KX-Mca"/>
                                 </connections>
                             </tableViewCell>

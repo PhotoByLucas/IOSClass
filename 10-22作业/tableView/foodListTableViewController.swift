@@ -8,14 +8,13 @@
 
 import UIKit
 
-class foodListTableViewController: UITableViewController
-{
+class foodListTableViewController: UITableViewController {
     
     var foodList: [food] = [food] ()
     func initFoodList()
     {
-        foodList.append(food(name: "cake", foodDescription: "sweet",foodAvatar: nil))
-        foodList.append(food(name: "hotdog", foodDescription: "delicious",foodAvatar: nil))
+        foodList.append(food(name: "cake", foodDescription: "sweet"))
+        foodList.append(food(name: "hotdog", foodDescription: "delicious"))
     }
 
     override func viewDidLoad() {
@@ -29,7 +28,6 @@ class foodListTableViewController: UITableViewController
             {
                 initFoodList()
             }
-            self.tableView.rowHeight=80
         }
         
        
@@ -55,14 +53,11 @@ class foodListTableViewController: UITableViewController
 
     //返回cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "foodcell", for: indexPath) as! foodTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "foodcell", for: indexPath)
 
         // Configure the cell...
-        cell.nameText?.text=foodList[indexPath.row].name
-        cell.descriptText?.text=foodList[indexPath.row].foodDescription
-       // cell.textLabel?.text=foodList[indexPath.row].name
-       // cell.detailTextLabel?.text=foodList[indexPath.row].foodDescription
-        cell.foodImage?.image=foodList[indexPath.row].foodAvatar
+        cell.textLabel?.text=foodList[indexPath.row].name
+        cell.detailTextLabel?.text=foodList[indexPath.row].foodDescription
         return cell
     }
  
@@ -114,7 +109,7 @@ class foodListTableViewController: UITableViewController
         // Pass the selected object to the new view controller.
         
         let descriptionVC = segue.destination as! descriptionViewController
-        if let selectedCell = sender as? foodTableViewCell
+        if let selectedCell = sender as? UITableViewCell
         {
             let indexPath = tableView.indexPath(for: selectedCell)!
             let selectedFood = foodList[(indexPath as NSIndexPath).row]

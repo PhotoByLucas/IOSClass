@@ -24,22 +24,18 @@ class food
 
 
 import Foundation
-import UIKit
 //从NSObject继承，实现NSCoding接口
 
 class food : NSObject, NSCoding
 {
     var name: String?
     var foodDescription: String?
-    // foodCategory:Strubf?
-    var foodAvatar : UIImage?
     
     func encode(with aCoder: NSCoder)
     {
         aCoder.encode(name,forKey: "nameKey")
         aCoder.encode(foodDescription, forKey: "descriptionKey")
       //  aCoder.encode(foodCategory,forKey: "categoryKey")
-        aCoder.encode(foodAvatar,forKey:"foodAvatarKey")
     }
     
     required init?(coder aDecoder: NSCoder)
@@ -47,7 +43,6 @@ class food : NSObject, NSCoding
         name=aDecoder.decodeObject(forKey: "nameKey") as? String
         foodDescription=aDecoder.decodeObject(forKey: "descriptionKey") as? String
        // foodCategory=aDecoder.decodeObject(forKey: "categoryKey") as? String
-        foodAvatar=aDecoder.decodeObject(forKey: "foodAvatarKey") as? UIImage
     }
     
     
@@ -58,12 +53,10 @@ class food : NSObject, NSCoding
     
     
     
-    init(name: String?, foodDescription: String?,foodAvatar:UIImage?)
+    init(name: String?, foodDescription: String?)
     {
         self.name=name
         self.foodDescription=foodDescription
-        //self.foodCategory=foodCategory
-        self.foodAvatar=foodAvatar
     }
 }
 

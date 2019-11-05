@@ -8,8 +8,17 @@
 
 import UIKit
 
-class foodTableViewCell: UITableViewCell {
+class foodTableViewCell: UITableViewCell{
 
+   /* @IBOutlet weak var nameText: UITextField!
+    @IBOutlet weak var descriptText: UITextField!
+    @IBOutlet weak var foodImage:UIImageView?*/
+    
+    @IBOutlet weak var foodImage: UIImageView!
+    @IBOutlet weak var descriptText: UILabel!
+    @IBOutlet weak var nameText: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -17,8 +26,12 @@ class foodTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
         // Configure the view for the selected state
     }
 
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+    }
+    
 }

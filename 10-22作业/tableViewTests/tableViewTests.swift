@@ -1,15 +1,15 @@
 //
-//  groupProjectTests.swift
-//  groupProjectTests
+//  tableViewTests.swift
+//  tableViewTests
 //
-//  Created by Apple on 2019/10/22.
+//  Created by Apple on 2019/10/15.
 //  Copyright © 2019 qcx. All rights reserved.
 //
 
 import XCTest
-@testable import groupProject
+@testable import tableView
 
-class groupProjectTests: XCTestCase {
+class tableViewTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

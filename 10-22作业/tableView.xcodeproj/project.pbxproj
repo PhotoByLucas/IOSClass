@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18174D6C236812BB000DB922 /* foodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18174D6B236812BB000DB922 /* foodTableViewCell.swift */; };
 		18FF3FF223559C6700BBC9B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF3FF123559C6700BBC9B6 /* AppDelegate.swift */; };
 		18FF3FF423559C6700BBC9B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF3FF323559C6700BBC9B6 /* ViewController.swift */; };
 		18FF3FF723559C6700BBC9B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18FF3FF523559C6700BBC9B6 /* Main.storyboard */; };
@@ -38,7 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18174D6B236812BB000DB922 /* foodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = foodTableViewCell.swift; sourceTree = "<group>"; };
 		18FF3FEE23559C6700BBC9B6 /* tableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FF3FF123559C6700BBC9B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18FF3FF323559C6700BBC9B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 				18FF402123559DA500BBC9B6 /* foodListTableViewController.swift */,
 				18FF40232355A39B00BBC9B6 /* food.swift */,
 				18FF40252355A93800BBC9B6 /* descriptionViewController.swift */,
-				18174D6B236812BB000DB922 /* foodTableViewCell.swift */,
 			);
 			path = tableView;
 			sourceTree = "<group>";
@@ -271,7 +268,6 @@
 				18FF3FF423559C6700BBC9B6 /* ViewController.swift in Sources */,
 				18FF40242355A39B00BBC9B6 /* food.swift in Sources */,
 				18FF40262355A93800BBC9B6 /* descriptionViewController.swift in Sources */,
-				18174D6C236812BB000DB922 /* foodTableViewCell.swift in Sources */,
 				18FF402223559DA500BBC9B6 /* foodListTableViewController.swift in Sources */,
 				18FF3FF223559C6700BBC9B6 /* AppDelegate.swift in Sources */,
 			);
