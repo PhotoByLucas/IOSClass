@@ -12,8 +12,8 @@ class textListTableViewController: UITableViewController {
     
     var textList: [text]=[text]( )
     func initTextList( ){
-        textList.append(text(name:"Tom", number: "134891"))
-        textList.append(text(name:"Joe", number: "291458"))
+        textList.append(text(name:"Tom", number: "134891",textAvatar:nil))
+        textList.append(text(name:"Joe", number: "291458",textAvatar:nil))
     }
     
     func saveTextFile( ){
@@ -32,7 +32,9 @@ class textListTableViewController: UITableViewController {
             if (defaultTextList.count==0){
                 initTextList()
             }
+            
         }
+        self.tableView.rowHeight=88
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -75,11 +77,14 @@ class textListTableViewController: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "textcell", for: indexPath)
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "textcell", for: indexPath) as! textTableViewCell
+cell.name?.text = textList[indexPath.row].name
+cell.number?.text = textList[indexPath.row].number
+        
         // Configure the cell...
-       cell.textLabel?.text = textList[indexPath.row].name
-        cell.detailTextLabel?.text = textList[indexPath.row].number
+//       cell.textLabel?.text = textList[indexPath.row].name
+//        cell.detailTextLabel?.text = textList[indexPath.row].number
+cell.textImage?.image = textList[indexPath.row].textAvatar
         return cell
     }
     

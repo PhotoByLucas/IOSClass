@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    @IBAction func exitToHere(segue :
+    UIStoryboardSegue) {
+    print("to")
+    }
 
     @IBAction func login(_ sender: Any) {
         if ( ( account.text == "sun") && ( passWord.text == "123") ){
