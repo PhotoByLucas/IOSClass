@@ -8,11 +8,32 @@
 
 import UIKit
 
-class detailViewController: UIViewController {
+class detailViewController: UIViewController,UINavigationControllerDelegate,UIImagePickerControllerDelegate {
 
     @IBOutlet weak var nameText: UITextField!
     
     @IBOutlet weak var moneyText: UITextField!
+    @IBOutlet weak var pictureView: UIImageView!
+    
+    @IBAction func takePhoto(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        present(imagePicker,animated: true,completion: nil)
+    }
+    
+    @IBAction func tabPhoto(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = self
+        present(imagePicker,animated: true,completion: nil)
+    }
+    func imagePickerController(_ picker: UIImagePickerController,didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]){
+        let selectedImage = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
+        self.pictureView.image = selectedImage
+        dismiss(animated: true, completion: nil)
+    }
+    
     var listForEdit: list?
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +41,7 @@ class detailViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.nameText.text=listForEdit?.name
         self.moneyText.text=listForEdit?.money
-        
+        self.pictureView.image=listForEdit?.listAvatar
     }
    
     
@@ -31,12 +52,14 @@ class detailViewController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         if segue.identifier=="saveToList"{
-            print("save")
-            listForEdit=list(name: self.nameText.text!,money: self.moneyText.text!)
+            if(listForEdit==nil){
+                listForEdit=list(name: "",money: "",listAvatar: nil)
+            }
+            listForEdit?.listAvatar=pictureView.image
+            listForEdit?.name=nameText.text
+            listForEdit?.money=moneyText.text
         }
-        if segue.identifier=="cancelToList"{
-            print("cancel")
-        }
+       
     }
     
 

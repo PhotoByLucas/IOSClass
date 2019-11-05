@@ -15,6 +15,7 @@
 		1867546F23559E3F0031206D /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1867546E23559E3F0031206D /* ListTableViewController.swift */; };
 		186754712355A38B0031206D /* list.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186754702355A38B0031206D /* list.swift */; };
 		186754732355A9340031206D /* detailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186754722355A9340031206D /* detailViewController.swift */; };
+		18F7C0DA23681287006EA2B2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F7C0D923681287006EA2B2 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1867546E23559E3F0031206D /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		186754702355A38B0031206D /* list.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = list.swift; sourceTree = "<group>"; };
 		186754722355A9340031206D /* detailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailViewController.swift; sourceTree = "<group>"; };
+		18F7C0D923681287006EA2B2 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,10 +67,11 @@
 				1867545C23559BE60031206D /* Main.storyboard */,
 				186754702355A38B0031206D /* list.swift */,
 				1867545F23559BF50031206D /* Assets.xcassets */,
+				186754722355A9340031206D /* detailViewController.swift */,
 				1867546123559BF50031206D /* LaunchScreen.storyboard */,
 				1867546423559BF50031206D /* Info.plist */,
 				1867546E23559E3F0031206D /* ListTableViewController.swift */,
-				186754722355A9340031206D /* detailViewController.swift */,
+				18F7C0D923681287006EA2B2 /* TableViewCell.swift */,
 			);
 			path = homework4;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				1867546F23559E3F0031206D /* ListTableViewController.swift in Sources */,
 				186754712355A38B0031206D /* list.swift in Sources */,
 				1867545B23559BE60031206D /* ViewController.swift in Sources */,
+				18F7C0DA23681287006EA2B2 /* TableViewCell.swift in Sources */,
 				186754732355A9340031206D /* detailViewController.swift in Sources */,
 				1867545923559BE60031206D /* AppDelegate.swift in Sources */,
 			);

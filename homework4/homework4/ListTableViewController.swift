@@ -12,8 +12,8 @@ class ListTableViewController: UITableViewController {
     var List: [list] = [list]()
     func initList(){
         //loadListFile()
-        List.append(list(name:"cake",money: "1.2"))
-        List.append(list(name:"apple",money: "1.6"))
+        List.append(list(name:"cake",money: "1.2",listAvatar: nil))
+        List.append(list(name:"apple",money: "1.6",listAvatar: nil))
     }
     func saveListFile(){
         let success = NSKeyedArchiver.archiveRootObject(List, toFile: list.ArchiveURL.path)
@@ -33,6 +33,7 @@ class ListTableViewController: UITableViewController {
                 initList()
             }
         }
+        self.tableView.rowHeight=80
         //initList()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -74,11 +75,12 @@ class ListTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text=List[indexPath.row].name
-        cell.detailTextLabel?.text = List[indexPath.row].money
+        cell.nameText?.text=List[indexPath.row].name
+        cell.moneyText?.text = List[indexPath.row].money
+        cell.listAvatar?.image = List[indexPath.row].listAvatar
         return cell
     }
     
@@ -136,7 +138,7 @@ class ListTableViewController: UITableViewController {
 //            }
 //        }
         let monryVC = segue.destination as! detailViewController
-        if let selectedCell = sender as? UITableViewCell{
+        if let selectedCell = sender as? TableViewCell{
             let indexPath = tableView.indexPath(for: selectedCell)!
             let selectedList=List[(indexPath as NSIndexPath).row]
             monryVC.listForEdit=selectedList
